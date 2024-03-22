@@ -1,0 +1,16 @@
+{
+  "name": "typescripteslintbeautifierhomework",
+  "version": "1.0.0",
+  "description": "The homework repository for further check and estimation",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "HoneyVanya",
+  "license": "ISC",
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "node": "^21.7.1",
+    "prettier": "^3.2.5"
+  }
+}
