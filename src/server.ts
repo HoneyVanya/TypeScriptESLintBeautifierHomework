@@ -1,11 +1,11 @@
 import * as http from "http";
 import { reverseArray } from "./reverseArray.js";
 
-const port = 3000;
+const port: number = 3000;
 
-const server = http.createServer(function (req, res) {
-    res.write("Welcome to TypeScript, ESLint, and Beautifier Homework!");
-    res.end();
+const server: http.Server = http.createServer(function (req: http.IncomingMessage, res: http.ServerResponse) {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Welcome to TypeScript, ESLint, and Beautifier Homework!");
 });
 
 server.listen(port, () => {
@@ -49,3 +49,5 @@ Producd.displayProductDetails();
 const Prod = new Product(7777, "JoJo", 999);
 
 console.log(reverseArray(Prod.ArrayOfClass()));
+
+console.log(Producd);

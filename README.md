@@ -38,9 +38,9 @@ I created a port that was assigned to 3000 and used a basic model of http server
 ```typescript
 const port = 3000;
 
-const server = http.createServer(function (req, res) {
-    res.write("Welcome to TypeScript, ESLint, and Beautifier Homework!");
-    res.end();
+const server: http.Server = http.createServer(function (req: http.IncomingMessage, res: http.ServerResponse) {
+    res.writeHead(200, { "Content-Type": "text/plain" });
+    res.end("Welcome to TypeScript, ESLint, and Beautifier Homework!");
 });
 
 server.listen(port, () => {
