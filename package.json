@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "The homework repository for further check and estimation",
   "main": "server.js",
-  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
